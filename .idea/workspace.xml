@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a20bf2bf-2e3a-4f9c-83c1-f665aefcf1cb" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "20.9.0",
     "javascript.nodejs.core.library.typings.version": "20.9.5",
-    "last_opened_file_path": "/home/yasso/WebstormProjects/Ida_Tech/back & front/my-floussi-back-2",
+    "last_opened_file_path": "/home/yasso/WebstormProjects/Ida_Tech/back & front/Hikma/my-floussi-back-2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
