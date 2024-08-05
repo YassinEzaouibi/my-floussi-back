@@ -54,7 +54,7 @@ app.use("/auth", authentication);
 app.use("/api", questionnaire);
 app.use("/api/email", email);
 
-app.use("/", (res, req) => {
+app.use("/", (req, res) => {
     const randomMessages = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
     res.send(randomMessages);
 });
