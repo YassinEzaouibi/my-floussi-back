@@ -29,6 +29,13 @@ app.use(bodyParser.json());
 
 // DB Config
 const db = require("./config/keys").mongoURI;
+const welcomeMessages = [
+    "Welcome to Hikma!",
+    "Hello! Glad to see you at Hikma.",
+    "Hi there! Welcome to Hikma.",
+    "Greetings! Welcome to Hikma.",
+    "Welcome! Enjoy your stay at Hikma."
+];
 
 // Connect to MongoDB
 mongoose.connect(db)
@@ -46,6 +53,11 @@ app.use("/api/users", users);
 app.use("/auth", authentication);
 app.use("/api", questionnaire);
 app.use("/api/email", email);
+
+app.use("/", (res, req) => {
+    const randomMessages = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
+    res.send(randomMessages);
+});
 
 app.use(session({ secret: 'SECRET_KEY', resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
