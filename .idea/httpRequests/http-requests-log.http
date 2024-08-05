@@ -1,0 +1,698 @@
+GET http://localhost:5000/api/questionnaire/66aa0f57ac1df9b9e930720c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyNDI1Mjk4LCJleHAiOjE3NTM5ODIyMjR9.s0fced8d5UAnuB3zYaoWtwxzWaInhqoNvbnV56Vt2KQ
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-31T124613.200.json
+
+###
+
+GET http://localhost:5000/api/questionnaire/669e7987f694558f874fc1c2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyNDI1Mjk4LCJleHAiOjE3NTM5ODIyMjR9.s0fced8d5UAnuB3zYaoWtwxzWaInhqoNvbnV56Vt2KQ
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-31T124608.404.json
+
+###
+
+GET http://localhost:5000/api/users/669e7987f694558f874fc1c2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyNDI1Mjk4LCJleHAiOjE3NTM5ODIyMjR9.s0fced8d5UAnuB3zYaoWtwxzWaInhqoNvbnV56Vt2KQ
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-31T122944.404.json
+
+###
+
+GET http://localhost:5000/api/questionnaire/669e7987f694558f874fc1c2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyNDI1Mjk4LCJleHAiOjE3NTM5ODIyMjR9.s0fced8d5UAnuB3zYaoWtwxzWaInhqoNvbnV56Vt2KQ
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-31T122839.404.json
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@admin.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-31T122818.200.json
+
+###
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-31T115352.200.json
+
+###
+
+GET http://localhost:5000/api/66a63542d850042e2c509212/questionnaires
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-31T112014.200.json
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+Content-Length: 33
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"score": 7,
+"type": "Prudent"
+}
+
+<> 2024-07-31T111800.200.json
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+Content-Length: 33
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"score": 8,
+"type": "Prudent"
+}
+
+<> 2024-07-31T111757.200.json
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+Content-Length: 33
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"score": 9,
+"type": "Prudent"
+}
+
+<> 2024-07-31T111753.200.json
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+Content-Length: 34
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"score": 10,
+"type": "Prudent"
+}
+
+<> 2024-07-31T111743.200.json
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+Content-Length: 33
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"score": 10
+"type": "Prudent"
+}
+
+<> 2024-07-31T111632.400.html
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+Content-Length: 33
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"score": 10
+"type": "Prudent"
+}
+
+<> 2024-07-31T111318.400.html
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+Content-Length: 33
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"score": 10
+"type": "Prudent"
+}
+
+<> 2024-07-31T111145.400.html
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+Content-Length: 35
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"score": "10"
+"type": "Prudent"
+}
+
+<> 2024-07-31T111128.400.html
+
+###
+
+POST http://localhost:5000/api/66a63542d850042e2c509212/questionnaire
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTYzNTQyZDg1MDA0MmUyYzUwOTIxMiIsIm5hbWUiOiJNb2hhbWVkIiwicm9sZSI6InVzZXIiLCJpYXQiOjE3MjI0MjA2MDUsImV4cCI6MTc1Mzk3NzUzMX0.HkKWz_CiOL2-s19ntXakObfvZwSILXge4tWxKRYTD9Y
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-31T111021.500.html
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+Content-Length: 59
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "ilhami@gmail.com",
+  "password": "New!1211"
+}
+
+<> 2024-07-31T111005.200.json
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+Content-Length: 59
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "ilhami@gmail.com",
+  "password": "New!1211"
+}
+
+<> 2024-07-31T110735.200.json
+
+###
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-31T105141.200.json
+
+###
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T211740.200.json
+
+###
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T211537.200.json
+
+###
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T203447.200.json
+
+###
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T203324.200.json
+
+###
+
+GET http://localhost:5000/api/questionnaires
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T203112.200.json
+
+###
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T201254.200.json
+
+###
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T200653.200.json
+
+###
+
+GET http://localhost:5000/api/users/role/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T165208.200.json
+
+###
+
+GET http://localhost:5000/api/users/role/admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyMzU0NTAwLCJleHAiOjE3NTM5MTE0MjZ9.R4kCbNXnlusBqJs0M7lE03K1axcf0vFo7xKp_uIIrPA
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T164838.200.json
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@admin.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-30T164820.200.json
+
+###
+
+GET http://localhost:5000/api/users/role/admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmMwNTA2MzkwNGEzNzFlYzU4YSIsIm5hbWUiOiJIYXNzYW4iLCJyb2xlIjoidXNlciIsImlhdCI6MTcyMTY1NDc5MCwiZXhwIjoxNzUzMjExNzE2fQ.fAQJWc9PNHw3CYYmrd0t9EzV488AsaTFKufQF8PqRCQ
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T164644.403.json
+
+###
+
+GET http://localhost:5000/api/questionnaires
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-30T145555.200.json
+
+###
+
+GET http://localhost:5000/api/users
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-29T105903.200.json
+
+###
+
+GET http://localhost:5000/api/users
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-29T105732.200.json
+
+###
+
+GET http://localhost:5000/api/users
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-28T130133.200.json
+
+###
+
+GET http://localhost:5000/api/users
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-26T112626.200.json
+
+###
+
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+Content-Length: 104
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test12@gmail.com",
+  "name": "test",
+  "password": "new!1211",
+  "password2": "new!1211"
+}
+
+<> 2024-07-24T161526.200.json
+
+###
+
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+Content-Length: 108
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test12@gmail.com",
+  "username": "test",
+  "password": "new!1211",
+  "password2": "new!1211"
+}
+
+<> 2024-07-24T161519.400.json
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@gmail.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-24T161331.200.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@gmail.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-24T124047.200.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@gmail.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-24T111728.200.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "test@mail.com",
+  "password": "newPass@eaza "
+}
+
+<> 2024-07-24T110119.404.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 60
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zjjkn@gmail.com",
+  "password": "newdnsndks"
+}
+
+<> 2024-07-24T105040.404.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 58
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaidkk@gmail.com",
+  "password": "nw!1211"
+}
+
+<> 2024-07-24T104325.404.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 56
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@gmail.com",
+  "password": "nw!1211"
+}
+
+<> 2024-07-24T103121.400.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@gmail.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-24T103116.200.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@gmail.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-24T005011.200.json
+
+###
+
+GET http://localhost:5000/api/users
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-23T153922.200.json
+
+###
+
+GET http://localhost:5000/api/users
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-23T143515.200.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "mustapha@gmail.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-23T142911.200.json
+
+###
+
+POST http://localhost:5000/api/login
+Content-Type: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "mustapha@gmail.com",
+  "password": "new!1211"
+}
+
+<> 2024-07-23T142910.200.json
+
+###
+
