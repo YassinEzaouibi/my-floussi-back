@@ -28,6 +28,7 @@
     "nodemon": "^3.1.4",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
+    "puppeteer": "^22.15.0",
     "validator": "^13.12.0"
   }
 }

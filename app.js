@@ -14,7 +14,7 @@ const questionnaire = require("./routes/api/questionnaire");
 
 // CORS middleware
 app.use(cors({
-    origin: ['https://my-floussi-front.onrender.com', 'http://localhost:5173', '*'],
+    origin: ['https://my-floussi-front.onrender.com', 'http://localhost:5173', 'http://localhost:5174'],
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,

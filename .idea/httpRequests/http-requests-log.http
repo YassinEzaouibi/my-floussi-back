@@ -11,6 +11,23 @@ x-http2-scheme: https
   "password": "new!1211"
 }
 
+<> 2024-08-06T013216.200.json
+
+###
+
+POST https://my-floussi-back.onrender.com/auth/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+  "email": "zaid@admin.com",
+  "password": "new!1211"
+}
+
 <> 2024-08-06T011556.200.json
 
 ###
@@ -690,16 +707,6 @@ Accept: */*
 }
 
 <> 2024-07-24T005011.200.json
-
-###
-
-GET http://localhost:5000/api/users
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-23T153922.200.json
 
 ###
 
