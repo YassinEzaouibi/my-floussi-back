@@ -6,8 +6,7 @@ const authorizeAdmin = require("../../middleware/verifyAdminRole")
 const User = require("../../models/User")
 
 // fetching all users
-// router.get("/", verifyToken, authorizeAdmin, (req, res)=> { verifyToken,authorizeAdmin,
-router.get("/" , (req, res)=> {
+router.get("/", verifyToken, authorizeAdmin, (req, res)=> { verifyToken,authorizeAdmin,
     User.find()
         .then(users => res.json(users))
         .catch(err => res.status(400).json({error: "Error fetching users"}))

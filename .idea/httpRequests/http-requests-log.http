@@ -1,3 +1,52 @@
+POST https://my-floussi-back.onrender.com/auth/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+x-http2-scheme: https
+
+{
+  "email": "zaid@admin.com",
+  "password": "new!1211"
+}
+
+<> 2024-08-06T011556.200.json
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@admin.com",
+  "password": "new!1211"
+}
+
+<> 2024-08-06T011418.200.json
+
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+Content-Length: 57
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "zaid@admin.com",
+  "password": "new!1211"
+}
+
+<> 2024-08-06T011358.200.json
+
+###
+
 GET http://localhost:5000/api/questionnaire/66aa0f57ac1df9b9e930720c
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OWQ2ZmE4NTA2MzkwNGEzNzFlYzU4NyIsIm5hbWUiOiJaYWlkIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzIyNDI1Mjk4LCJleHAiOjE3NTM5ODIyMjR9.s0fced8d5UAnuB3zYaoWtwxzWaInhqoNvbnV56Vt2KQ
@@ -651,48 +700,6 @@ Accept: */*
 content-length: 0
 
 <> 2024-07-23T153922.200.json
-
-###
-
-GET http://localhost:5000/api/users
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-23T143515.200.json
-
-###
-
-POST http://localhost:5000/api/login
-Content-Type: application/json
-Content-Length: 61
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "email": "mustapha@gmail.com",
-  "password": "new!1211"
-}
-
-<> 2024-07-23T142911.200.json
-
-###
-
-POST http://localhost:5000/api/login
-Content-Type: application/json
-Content-Length: 61
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "email": "mustapha@gmail.com",
-  "password": "new!1211"
-}
-
-<> 2024-07-23T142910.200.json
 
 ###
 
