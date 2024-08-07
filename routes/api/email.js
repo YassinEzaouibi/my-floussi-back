@@ -2,14 +2,12 @@
 const express = require('express');
 const sendEmail = require('../../service/mailSending');
 const personalityAnalysis = require("../../service/personalityAnalysis");
+const nodemailer = require("nodemailer");
 
 const router = express.Router();
 
 router.post('/send-result', async (req, res) => {
     const { email, subject, result } = req.body;
-    console.log('email:', email);
-    console.log('subject:', subject);
-    console.log('result:', result);
 
     const analysis = personalityAnalysis[result.personType] || {};
 
@@ -62,13 +60,107 @@ router.post('/send-result', async (req, res) => {
   </div>
 `;
 
-
     try {
         await sendEmail(email, subject, textContent, htmlContent);
         res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
         res.status(500).json({ error: 'Failed to send email' });
     }
+});
+
+let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.EMAIL_ADMIN,
+        pass: process.env.PASSWORD_THIRD_APP,
+    },
+});
+
+router.post('/contact', (req, res) => {
+    const { 'first-name': firstName, 'last-name': lastName, email, 'phone-number': phoneNumber, message } = req.body;
+
+    const mailOptions = {
+        from: email,
+        to: process.env.EMAIL_ADMIN,
+        subject: `Contact Form Submission from ${firstName} ${lastName}`,
+        html: `
+    <html>
+      <head>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+          }
+          .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          .header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+          }
+          .content {
+            padding: 20px;
+          }
+          .content h2 {
+            color: #333333;
+          }
+          .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555555;
+          }
+          .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 0 0 8px 8px;
+          }
+          .footer p {
+            font-size: 14px;
+            color: #777777;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="header">
+            <h1>Contact Form Submission</h1>
+          </div>
+          <div class="content">
+            <h2>New message from ${firstName} ${lastName}</h2>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phoneNumber}</p>
+            <p><strong>Message:</strong></p>
+            <p>${message}</p>
+          </div>
+          <div class="footer">
+            <p>Thank you for reaching out!</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  `,
+    };
+
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email:', error);
+            return res.status(500).json({ message: 'Failed to send message.' });
+        }
+        console.log('Email sent:', info.response);
+        res.status(200).json({ message: 'Message sent successfully!' });
+    });
 });
 
 module.exports = router;
