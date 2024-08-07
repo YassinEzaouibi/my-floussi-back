@@ -1,1 +1,19 @@
-test file
+# Node.js
+node_modules/
+npm-debug.log
+
+# Files
+test-file.js
+
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS generated files
+.DS_Store
+Thumbs.db
