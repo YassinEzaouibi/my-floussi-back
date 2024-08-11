@@ -4,6 +4,7 @@ const verifyToken = require("../../middleware/verifyToken");
 const verifyAdminRole = require("../../middleware/verifyAdminRole");
 const QuestionnaireScoresTypes = require("../../models/QuestionnaireScoresTypes");
 const User = require("../../models/User");
+const GoogleUser = require("../../models/UserGoogleSchema");
 
 // add a questionnaire to a user
 router.post("/:id/questionnaire", verifyToken, async (req, res) => {
@@ -14,9 +15,12 @@ router.post("/:id/questionnaire", verifyToken, async (req, res) => {
         const newQuestionnaireResult = new QuestionnaireScoresTypes({score, type});
         await newQuestionnaireResult.save();
 
-        const user = await User.findById(userId);
+        let user = await User.findById(userId);
         if (!user) {
-            return res.status(404).json({ error: "User not found" });
+            user = await GoogleUser.findById(userId);
+            if (!user) {
+                return res.status(404).json({ error: "User not found" });
+            }
         }
 
         // Assuming the user model has a 'questionnaires' field that is an array
@@ -50,11 +54,13 @@ router.get('/questionnaire/:id', async (req, res) => {
 // get all questionnaires by id user
 router.get('/:id/questionnaires', verifyToken, async (req, res) => {
     const userId = req.params.id;
-
     try {
-        const user = await User.findById(userId).populate('questionnaire');
+        let user = await User.findById(userId).populate('questionnaire');
         if (!user) {
-            return res.status(404).json({ message: 'User not found' });
+            user = await GoogleUser.findById(userId).populate('questionnaire');
+            if (!user) {
+                return res.status(404).json({ error: "User not found" });
+            }
         }
         res.json(user.questionnaire);
     } catch (error) {
@@ -66,11 +72,13 @@ router.get('/:id/questionnaires', verifyToken, async (req, res) => {
 // get all questionnaires
 router.get('/questionnaires', verifyToken, verifyAdminRole, async (req, res) => {
     try {
-        const users = await User.find().populate('questionnaire');
-        if (!users.length) {
+        const usersQuestionnaires = await User.find().populate('questionnaire');
+        const googleUsersQuestionnaires = await GoogleUser.find().populate('questionnaire');
+        const allQuestionnaires = [...usersQuestionnaires, ...googleUsersQuestionnaires];
+        if (!allQuestionnaires.length) {
             return res.status(404).json({ message: 'No users found' });
         }
-        const questionnaires = users.map(user => user.questionnaire).flat();
+        const questionnaires = allQuestionnaires.map(user => user.questionnaire).flat();
         res.json(questionnaires);
     } catch (error) {
         console.error(error);

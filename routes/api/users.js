@@ -4,12 +4,20 @@ const verifyToken = require("../../middleware/verifyToken")
 const authorizeAdmin = require("../../middleware/verifyAdminRole")
 
 const User = require("../../models/User")
+const GoogleUser = require("../../models/UserGoogleSchema")
 
 // fetching all users
-router.get("/", verifyToken, authorizeAdmin, (req, res)=> { verifyToken,authorizeAdmin,
-    User.find()
-        .then(users => res.json(users))
-        .catch(err => res.status(400).json({error: "Error fetching users"}))
+router.get("/", verifyToken, authorizeAdmin,async(req, res)=> {
+    try {
+        const users = await User.find();
+        const googleUsers = await  GoogleUser.find();
+        // const allUsers = {users, googleUsers};
+        const allUsers = [...users, ...googleUsers];
+        res.json(allUsers);
+    }catch (err){
+        console.error(err);
+        res.status(400).json({error: "Error fetching users"})
+    }
 })
 
 // fetch user by id
@@ -81,10 +89,18 @@ router.delete("/:id", verifyToken, async (req, res) => {
 })
 
 // Fetch all users with role 'user'
-router.get("/role/user", verifyToken,authorizeAdmin, (req, res) => {
-    User.find({ role: "user" })
-        .then(users => res.json(users))
-        .catch(err => res.status(400).json({ error: "Error fetching users" }));
+router.get("/role/user", verifyToken,authorizeAdmin, async (req, res) => {
+    try {
+        const users = await User.find({ role: "user" });
+        const googleUsers = await  GoogleUser.find();
+        // const allUsers = {users, googleUsers};
+        const allUsers = [...users, ...googleUsers];
+        res.json(allUsers);
+    }catch (err){
+        console.error(err);
+        res.status(400).json({error: "Error fetching users"})
+    }
+
 });
 
 // Fetch all users with role 'admin'
@@ -93,4 +109,16 @@ router.get("/role/admin", verifyToken,authorizeAdmin,(req, res) => {
         .then(users => res.json(users))
         .catch(err => res.status(400).json({ error: "Error fetching users" }));
 });
+
+router.get("/google/user", verifyToken,authorizeAdmin, async (req, res) => {
+    try {
+        const googleUsers = await  GoogleUser.find();
+        res.json(googleUsers);
+    }catch (err){
+        console.error(err);
+        res.status(400).json({error: "Error fetching google users"})
+    }
+
+});
+
 module.exports = router;
