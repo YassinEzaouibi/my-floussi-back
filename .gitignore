@@ -3,8 +3,7 @@ node_modules/
 npm-debug.log
 
 # Files
-test-file.js
-
+.env
 
 # Editor directories and files
 .idea/
