@@ -1,7 +1,7 @@
 // emailService.js
 const nodemailer = require('nodemailer');
 
-const sendEmail = async (to, subject, text, html) => {
+const sendEmail = async (to, subject, text, html, attachments = []) => {
     try {
         // Configure the transporter
         let transporter = nodemailer.createTransport({
@@ -19,6 +19,7 @@ const sendEmail = async (to, subject, text, html) => {
             subject: subject,
             text: text,
             html: html,
+            attachments: attachments,
         };
 
         // Send the email

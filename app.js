@@ -24,8 +24,8 @@ app.use(cors({
 app.options('*', cors()); // Handle preflight requests
 
 // Body parser middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true }));
 
 // DB Config
 const db = require("./config/keys").mongoURI;
