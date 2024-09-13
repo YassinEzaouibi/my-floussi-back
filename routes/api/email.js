@@ -7,9 +7,9 @@ const personalityAnalysis = require("../../service/personalityAnalysis");
 const router = express.Router();
 
 router.post('/send-result', async (req, res) => {
-    const { email, subject, result, graphs } = req.body;
+    const { email, subject, result } = req.body;
 
-    const analysis = personalityAnalysis[result.personType] || {};
+    const analysis = personalityAnalysis[result.currentPersonType] || {};
 
     const textContent = `Hello, your result is: ${result}`;
     const htmlContent = `
@@ -18,12 +18,12 @@ router.post('/send-result', async (req, res) => {
             <!-- Personality Type Card -->
             <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
                 <h2 style="color: #333; margin-top: 0;">Your Personality Type</h2>
-                <p style="font-size: 16px; color: #555;"><strong>Type:</strong> ${result.personType}</p>
+                <p style="font-size: 16px; color: #555;"><strong>Type:</strong> ${result.currentPersonType}</p>
             </div>
             <!-- Score Level Card -->
             <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
                 <h2 style="color: #333; margin-top: 0;">Your Score Level</h2>
-                <p style="font-size: 16px; color: #555;"><strong>Score Level:</strong> ${result.scoreLevel}</p>
+                <p style="font-size: 16px; color: #555;"><strong>Score Level:</strong> ${result.currentScoreLevel}</p>
             </div>
             <!-- Tolerance Risk Card -->
             <div style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
@@ -52,25 +52,22 @@ router.post('/send-result', async (req, res) => {
             </div>
         </div>
     `;
-
-
-
     let imageDir;
-    switch (result.personType) {
+    switch (result.currentPersonType) {
         case 'Prudent':
             imageDir = path.join(__dirname, '../../assets/graphs/prudent');
             break;
         case 'Modere':
             imageDir = path.join(__dirname, '../../assets/graphs/modere');
             break;
-        case 'Agressif':
-            imageDir = path.join(__dirname, '../../assets/graphs/agressif');
-            break;
         case 'Dynamic':
             imageDir = path.join(__dirname, '../../assets/graphs/dynamic');
             break;
+        case 'Agressif':
+            imageDir = path.join(__dirname, '../../assets/graphs/agressif');
+            break;
         default:
-            imageDir = path.join(__dirname, '../../assets/graphs/default');
+            return res.status(400).json({ error: `Invalid persona type: ${result.currentPersonType}` });
     }
 
     const imageFiles = fs.readdirSync(imageDir).filter(file => file.endsWith('.png'));
